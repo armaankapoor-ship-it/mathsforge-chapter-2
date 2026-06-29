@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium static website for Class 12 Maths Chapter 2 Inverse Trigonometric Functions.">
+  <title>MathsForge | Inverse Trigonometric Functions</title>
+  <style>
+    :root{color-scheme:light;--ink:#111827;--text:#526170;--line:rgba(15,23,42,.1);--panel:rgba(255,255,255,.82);--soft:#d9f1f7;--brand:#145c70;--mint:#b9f6de;--warm:#ea7a3a;--sun:#f5b942;--bg:#f7fbfc}
+    :root.dark{color-scheme:dark;--ink:#f8fafc;--text:#c8d6dc;--line:rgba(255,255,255,.12);--panel:rgba(255,255,255,.055);--soft:rgba(185,246,222,.1);--brand:#b9f6de;--bg:#071016}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;background:var(--bg);color:var(--ink);font-family:Manrope,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input{font:inherit}button{cursor:pointer}a{color:inherit}.wrap{width:min(1180px,100%);margin:auto;padding:0 22px}.topbar{position:fixed;inset:12px 12px auto;z-index:20}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;border:1px solid rgba(255,255,255,.75);border-radius:18px;background:rgba(255,255,255,.82);box-shadow:0 20px 70px rgba(15,23,42,.1);backdrop-filter:blur(16px);padding:12px 14px}.dark .nav{border-color:rgba(255,255,255,.1);background:rgba(7,16,22,.82)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:950}.brand-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:#111827;color:white}.dark .brand-icon{background:var(--mint);color:#111827}.brand span:last-child{font-size:14px}.brand em{font-style:normal;color:#145c70}.dark .brand em{color:var(--mint)}.links{display:flex;gap:4px;align-items:center}.links a,.mode,.menu{border:0;border-radius:10px;background:transparent;color:#64748b;font-size:11px;font-weight:900;text-decoration:none;padding:9px 11px}.links a:hover,.mode:hover,.menu:hover{background:var(--soft);color:var(--brand)}.mode,.menu{border:1px solid var(--line);background:var(--panel);color:var(--ink)}.menu{display:none}.hero{position:relative;overflow:hidden;padding:148px 0 80px;background:linear-gradient(180deg,rgba(247,251,252,.96),rgba(232,246,248,.94) 72%,var(--bg))}.dark .hero{background:linear-gradient(180deg,#071016,#0c1d27 72%,#071016)}.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(20,92,112,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(20,92,112,.07) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 92%)}.hero .wrap{position:relative;z-index:1}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--brand);font-size:10px;font-weight:950;text-transform:uppercase;letter-spacing:.16em}.eyebrow:before{content:"";width:30px;height:1px;background:var(--brand);opacity:.45}.hero h1{max-width:900px;margin:16px 0 0;font-size:clamp(3rem,7vw,5.9rem);line-height:.98;font-weight:950}.hero p{max-width:720px;color:var(--text);font-size:17px;line-height:1.8;font-weight:700}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.primary,.ghost{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 18px;font-size:12px;font-weight:950;text-decoration:none}.primary{border:0;background:#111827;color:white;box-shadow:0 18px 42px rgba(15,23,42,.16)}.dark .primary{background:var(--mint);color:#111827}.ghost{border:1px solid var(--line);background:var(--panel);color:var(--ink)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:52px;max-width:760px;overflow:hidden;border:1px solid rgba(255,255,255,.75);border-radius:10px;background:rgba(255,255,255,.5);box-shadow:0 22px 70px rgba(15,23,42,.1)}.dark .stats{border-color:var(--line);background:rgba(255,255,255,.04)}.stats div{display:grid;place-items:center;align-content:center;gap:4px;min-height:100px;background:rgba(255,255,255,.45)}.dark .stats div{background:rgba(255,255,255,.035)}.stats strong{font-size:26px}.stats span{color:#64748b;font-size:10px;font-weight:950;text-transform:uppercase}.dark .stats span{color:#9eb2ba}section{padding:72px 0;border-top:1px solid var(--line)}section.tint{background:rgba(255,255,255,.55)}.dark section.tint{background:rgba(255,255,255,.025)}.section-head h2{max-width:850px;margin:14px 0 0;font-size:clamp(2rem,4vw,3.4rem);line-height:1.08;font-weight:950}.section-head p{max-width:760px;color:var(--text);line-height:1.75;font-weight:700}.grid{display:grid;gap:16px}.cards-3{grid-template-columns:repeat(3,minmax(0,1fr))}.cards-2{grid-template-columns:repeat(2,minmax(0,1fr))}.card,.formula,.derivation,.diagram,.question-card,.lab,.print-sheet{border:1px solid var(--line);border-radius:10px;background:var(--panel);box-shadow:0 18px 48px rgba(15,23,42,.07);padding:18px}.dark .card,.dark .formula,.dark .derivation,.dark .diagram,.dark .question-card,.dark .lab,.dark .print-sheet{box-shadow:none}.card h3,.formula h3,.derivation h3,.diagram h3,.question-card h3,.lab h3{margin:8px 0;color:var(--ink);font-size:18px}.card p,.formula p,.derivation p,.diagram p,.question-card p,.lab p{color:var(--text);line-height:1.65;font-weight:700}.pill-row{display:flex;flex-wrap:wrap;gap:8px}.pill-row span,.tag{display:inline-flex;border-radius:999px;background:var(--soft);color:var(--brand);padding:5px 9px;font-size:10px;font-weight:950;text-transform:uppercase}.formula-code{margin:12px 0;border-radius:10px;background:#111827;color:white;padding:14px;overflow:auto;font-family:Consolas,ui-monospace,monospace;font-weight:800}.dark .formula-code{background:rgba(185,246,222,.1)}.note-list{display:grid;gap:10px;margin:14px 0 0;padding:0;list-style:none}.note-list li{border-left:3px solid var(--brand);background:var(--soft);padding:10px 12px;color:var(--text);line-height:1.55;font-weight:750}.derivation details{display:grid}.derivation summary{cursor:pointer;font-weight:950}.derivation ol{color:var(--text);line-height:1.65;font-weight:700}.diagram{overflow:hidden;padding:0}.diagram svg{width:100%;display:block;background:linear-gradient(135deg,rgba(217,241,247,.85),rgba(255,255,255,.68));color:#145c70}.dark .diagram svg{background:linear-gradient(135deg,rgba(20,92,112,.22),rgba(255,255,255,.04))}.diagram svg text{fill:#334155;font-size:13px;font-weight:900}.dark .diagram svg text{fill:#e2e8f0}.diagram-body{padding:16px}.search{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:6px 12px;margin:26px 0 16px}.search input{width:100%;min-height:44px;border:0;background:transparent;color:var(--ink);outline:0;font-weight:800}.lab-grid{display:grid;grid-template-columns:1fr 340px;gap:18px}.stage{min-height:390px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(135deg,rgba(217,241,247,.65),rgba(255,255,255,.75));padding:16px}.dark .stage{background:linear-gradient(135deg,rgba(20,92,112,.2),rgba(255,255,255,.035))}.stage svg{width:100%;height:330px}.controls{display:grid;gap:10px}.controls label{display:grid;gap:6px;color:var(--text);font-size:12px;font-weight:950}.controls input,.controls select,.controls textarea{border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);padding:10px}.result{border-left:3px solid var(--warm);background:rgba(245,185,66,.13);padding:12px;color:var(--text);line-height:1.55;font-weight:750}.answer{display:none;border-top:1px solid var(--line);padding-top:12px}.answer.open{display:grid;gap:6px}.dashboard{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.dashboard ul{margin:0;padding-left:18px;color:var(--text);line-height:1.65;font-weight:700}.print-sheet{margin-top:24px}.print-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.footer{border-top:1px solid var(--line);padding:42px 0;background:var(--panel);color:var(--text);font-weight:700}.mobile-links{display:none}.hide{display:none!important}
+    @media(max-width:980px){.links{display:none}.menu{display:inline-flex}.mobile-links{display:grid;gap:8px;margin-top:8px;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:10px}.mobile-links a{text-decoration:none;font-size:12px;font-weight:950;color:var(--text);padding:10px}.cards-3,.cards-2,.dashboard,.lab-grid,.print-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+    @media print{.topbar,.cta,.lab,.practice-filter,.answer-toggle,.footer{display:none!important}section{padding:18px 0;border:0}.card,.formula,.derivation,.diagram,.question-card,.print-sheet{box-shadow:none;border:1px solid #ddd}.print-grid{grid-template-columns:1fr 1fr}.hero{padding:20px 0}.hero h1{font-size:36px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="MathsForge home"><span class="brand-icon">T</span><span>MATHS<em>FORGE</em></span></a>
+      <div class="links"><a href="#map">Map</a><a href="#notes">Notes</a><a href="#formulas">Formulas</a><a href="#derivations">Proofs</a><a href="#diagrams">Diagrams</a><a href="#lab">Lab</a><a href="#practice">Practice</a><a href="#revision">Revision</a></div>
+      <div><button class="mode" type="button" id="mode">Dark</button><button class="menu" type="button" id="menu">Menu</button></div>
+    </nav>
+    <div class="mobile-links hide" id="mobileLinks"><a href="#map">Map</a><a href="#notes">Notes</a><a href="#formulas">Formulas</a><a href="#derivations">Proofs</a><a href="#diagrams">Diagrams</a><a href="#lab">Lab</a><a href="#practice">Practice</a><a href="#revision">Revision</a></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="grid-bg"></div>
+      <div class="wrap">
+        <p class="eyebrow">Class 12 Mathematics / Chapter 2</p>
+        <h1>Inverse Trigonometric Functions</h1>
+        <p>A complete visual learning website for principal values, domains, ranges, graphs, identities, transformations, and exam-style inverse trigonometric equations.</p>
+        <div class="cta"><a class="primary" href="#notes">Start learning</a><a class="ghost" href="#lab">Open interactive lab</a><a class="ghost" href="#print">Printable sheet</a></div>
+        <div class="stats">
+          <div><strong>12</strong><span>note sections</span></div>
+          <div><strong>12</strong><span>formula cards</span></div>
+          <div><strong>12</strong><span>practice questions</span></div>
+          <div><strong>0</strong><span>paid services</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint" id="map">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Topic map</p><h2>From many-one trig graphs to principal values.</h2><p>Chapter 2 becomes clear when you treat inverse trig as branch restriction plus angle recovery.</p></div>
+        <div class="grid cards-3">
+          <article class="card"><div class="pill-row"><span>01</span></div><h3>Need for restriction</h3><p>Trigonometric functions are many-one, so branches are restricted before inverses are defined.</p></article><article class="card"><div class="pill-row"><span>02</span></div><h3>Principal value branches</h3><p>Memorize domains and ranges of sin^-1, cos^-1, tan^-1, cot^-1, sec^-1, and cosec^-1.</p></article><article class="card"><div class="pill-row"><span>03</span></div><h3>Graphs</h3><p>Understand inverse graphs as reflections of restricted trig graphs in y=x.</p></article><article class="card"><div class="pill-row"><span>04</span></div><h3>Core identities</h3><p>Use complementary identities and addition formulas with correct conditions.</p></article><article class="card"><div class="pill-row"><span>05</span></div><h3>Transformations</h3><p>Simplify expressions by choosing the correct branch and sign.</p></article><article class="card"><div class="pill-row"><span>06</span></div><h3>Exam synthesis</h3><p>Handle domain restrictions, principal values, and case-based arctan identities.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Deep notes</p><h2>Section-wise notes with CBSE and JEE lenses.</h2><p>Every section gives the simple idea, board writing angle, JEE pattern, examples, common mistakes, and a visual cue.</p></div>
+        <label class="search practice-filter">Search notes <input id="noteSearch" placeholder="Type a concept, formula, trap, or keyword"></label>
+        <div class="grid cards-2" id="noteGrid">
+          <article class="card note-card" data-note="why inverse trig needs branches sin x, cos x, and tan x are not one-one on their full domains, so we restrict them to principal branches. branch controls sign and final angle. inverse trig gives principal value, not all solutions."><div class="pill-row"><span>01</span><span>Basics</span></div><h3>Why inverse trig needs branches</h3><p>sin x, cos x, and tan x are not one-one on their full domains, so we restrict them to principal branches.</p><ul class="note-list"><li><b>CBSE writing:</b> Mention one-one restriction before defining inverse.</li><li><b>JEE focus:</b> Branch controls sign and final angle.</li><li><b>Common trap:</b> Inverse trig gives principal value, not all solutions.</li></ul></article><article class="card note-card" data-note="sin^-1 x sin^-1 x has domain [-1,1] and range [-pi/2, pi/2]. output angle has cosine non-negative. sin^-1(sin theta) is not always theta."><div class="pill-row"><span>02</span><span>Principal values</span></div><h3>sin^-1 x</h3><p>sin^-1 x has domain [-1,1] and range [-pi/2, pi/2].</p><ul class="note-list"><li><b>CBSE writing:</b> State domain and range clearly.</li><li><b>JEE focus:</b> Output angle has cosine non-negative.</li><li><b>Common trap:</b> sin^-1(sin theta) is not always theta.</li></ul></article><article class="card note-card" data-note="cos^-1 x cos^-1 x has domain [-1,1] and range [0, pi]. use cos^-1(-x)=pi-cos^-1 x. do not use [-pi/2,pi/2] for cos inverse."><div class="pill-row"><span>03</span><span>Principal values</span></div><h3>cos^-1 x</h3><p>cos^-1 x has domain [-1,1] and range [0, pi].</p><ul class="note-list"><li><b>CBSE writing:</b> Remember output is never negative.</li><li><b>JEE focus:</b> Use cos^-1(-x)=pi-cos^-1 x.</li><li><b>Common trap:</b> Do not use [-pi/2,pi/2] for cos inverse.</li></ul></article><article class="card note-card" data-note="tan^-1 x tan^-1 x has domain r and range (-pi/2, pi/2). addition formula needs case handling. tan^-1 x + tan^-1 y is not always tan^-1((x+y)/(1-xy))."><div class="pill-row"><span>04</span><span>Principal values</span></div><h3>tan^-1 x</h3><p>tan^-1 x has domain R and range (-pi/2, pi/2).</p><ul class="note-list"><li><b>CBSE writing:</b> Use open interval for range.</li><li><b>JEE focus:</b> Addition formula needs case handling.</li><li><b>Common trap:</b> tan^-1 x + tan^-1 y is not always tan^-1((x+y)/(1-xy)).</li></ul></article><article class="card note-card" data-note="cot^-1 x cot^-1 x has domain r and range (0, pi). cot^-1 x = pi/2 - tan^-1 x under ncert convention. different books may use different cot inverse ranges; follow ncert/cbse."><div class="pill-row"><span>05</span><span>Principal values</span></div><h3>cot^-1 x</h3><p>cot^-1 x has domain R and range (0, pi).</p><ul class="note-list"><li><b>CBSE writing:</b> Use positive principal range.</li><li><b>JEE focus:</b> cot^-1 x = pi/2 - tan^-1 x under NCERT convention.</li><li><b>Common trap:</b> Different books may use different cot inverse ranges; follow NCERT/CBSE.</li></ul></article><article class="card note-card" data-note="sec^-1 x and cosec^-1 x both require |x| &gt;= 1. their ranges exclude angles where sec or cosec is undefined. use sec^-1 x = cos^-1(1/x), cosec^-1 x = sin^-1(1/x) with range care. x cannot lie between -1 and 1."><div class="pill-row"><span>06</span><span>Principal values</span></div><h3>sec^-1 x and cosec^-1 x</h3><p>Both require |x| &gt;= 1. Their ranges exclude angles where sec or cosec is undefined.</p><ul class="note-list"><li><b>CBSE writing:</b> Write domain R - (-1,1).</li><li><b>JEE focus:</b> Use sec^-1 x = cos^-1(1/x), cosec^-1 x = sin^-1(1/x) with range care.</li><li><b>Common trap:</b> x cannot lie between -1 and 1.</li></ul></article><article class="card note-card" data-note="graph of inverse functions inverse function graph is reflection of the restricted original graph in y=x. use graph to judge range and monotonicity. reflect only the restricted branch, not entire trig graph."><div class="pill-row"><span>07</span><span>Graphs</span></div><h3>Graph of inverse functions</h3><p>Inverse function graph is reflection of the restricted original graph in y=x.</p><ul class="note-list"><li><b>CBSE writing:</b> Draw branch and reflection neatly.</li><li><b>JEE focus:</b> Use graph to judge range and monotonicity.</li><li><b>Common trap:</b> Reflect only the restricted branch, not entire trig graph.</li></ul></article><article class="card note-card" data-note="complementary identities sin^-1 x + cos^-1 x = pi/2 and tan^-1 x + cot^-1 x = pi/2. these save time in simplification. do not apply outside the common domain."><div class="pill-row"><span>08</span><span>Identities</span></div><h3>Complementary identities</h3><p>sin^-1 x + cos^-1 x = pi/2 and tan^-1 x + cot^-1 x = pi/2.</p><ul class="note-list"><li><b>CBSE writing:</b> Mention x in domain.</li><li><b>JEE focus:</b> These save time in simplification.</li><li><b>Common trap:</b> Do not apply outside the common domain.</li></ul></article><article class="card note-card" data-note="negative argument identities sin^-1(-x)=-sin^-1 x and tan^-1(-x)=-tan^-1 x; cos^-1(-x)=pi-cos^-1 x. use sign to bring arguments into principal range. cos^-1 is not odd."><div class="pill-row"><span>09</span><span>Identities</span></div><h3>Negative argument identities</h3><p>sin^-1(-x)=-sin^-1 x and tan^-1(-x)=-tan^-1 x; cos^-1(-x)=pi-cos^-1 x.</p><ul class="note-list"><li><b>CBSE writing:</b> Separate odd and non-odd inverse functions.</li><li><b>JEE focus:</b> Use sign to bring arguments into principal range.</li><li><b>Common trap:</b> cos^-1 is not odd.</li></ul></article><article class="card note-card" data-note="tan inverse addition tan^-1 x + tan^-1 y depends on xy and signs because principal value range is limited. when xy&gt;1, add or subtract pi according to signs. ignoring cases gives wrong quadrant."><div class="pill-row"><span>10</span><span>Identities</span></div><h3>tan inverse addition</h3><p>tan^-1 x + tan^-1 y depends on xy and signs because principal value range is limited.</p><ul class="note-list"><li><b>CBSE writing:</b> Use formula with stated condition xy&lt;1 for simple form.</li><li><b>JEE focus:</b> When xy&gt;1, add or subtract pi according to signs.</li><li><b>Common trap:</b> Ignoring cases gives wrong quadrant.</li></ul></article><article class="card note-card" data-note="solving inverse trig equations convert the inverse expression to a principal angle, then apply domain and range restrictions. check extraneous answers from transformations. squaring or applying trig can add invalid roots."><div class="pill-row"><span>11</span><span>Equations</span></div><h3>Solving inverse trig equations</h3><p>Convert the inverse expression to a principal angle, then apply domain and range restrictions.</p><ul class="note-list"><li><b>CBSE writing:</b> Write domain restrictions before solving.</li><li><b>JEE focus:</b> Check extraneous answers from transformations.</li><li><b>Common trap:</b> Squaring or applying trig can add invalid roots.</li></ul></article><article class="card note-card" data-note="simplification strategy name the inverse angle, draw a triangle, then compute required trig value. triangle method avoids memorizing too many identities. choose side signs according to principal range."><div class="pill-row"><span>12</span><span>Applications</span></div><h3>Simplification strategy</h3><p>Name the inverse angle, draw a triangle, then compute required trig value.</p><ul class="note-list"><li><b>CBSE writing:</b> Triangle method is clean for expressions like sin(tan^-1 x).</li><li><b>JEE focus:</b> Triangle method avoids memorizing too many identities.</li><li><b>Common trap:</b> Choose side signs according to principal range.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint" id="formulas">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Formula sheet</p><h2>High-yield formulas and exact conditions.</h2><p>These cards are written for quick revision and clean board-style substitution.</p></div>
+        <div class="grid cards-3">
+          <article class="formula"><div class="pill-row"><span>Domain</span></div><h3>sin inverse</h3><div class="formula-code">sin^-1 x: domain [-1,1], range [-pi/2, pi/2]</div><p>Returns the principal angle whose sine is x.</p><ul class="note-list"><li><b>Example:</b> sin^-1(1/2)=pi/6.</li><li><b>Trap:</b> Output cannot be 5pi/6.</li></ul></article><article class="formula"><div class="pill-row"><span>Domain</span></div><h3>cos inverse</h3><div class="formula-code">cos^-1 x: domain [-1,1], range [0, pi]</div><p>Returns the principal angle whose cosine is x.</p><ul class="note-list"><li><b>Example:</b> cos^-1(-1/2)=2pi/3.</li><li><b>Trap:</b> Output is not negative.</li></ul></article><article class="formula"><div class="pill-row"><span>Domain</span></div><h3>tan inverse</h3><div class="formula-code">tan^-1 x: domain R, range (-pi/2, pi/2)</div><p>Returns principal angle with tangent x.</p><ul class="note-list"><li><b>Example:</b> tan^-1(1)=pi/4.</li><li><b>Trap:</b> Endpoints are excluded.</li></ul></article><article class="formula"><div class="pill-row"><span>Domain</span></div><h3>cot inverse</h3><div class="formula-code">cot^-1 x: domain R, range (0, pi)</div><p>Returns principal angle with cotangent x.</p><ul class="note-list"><li><b>Example:</b> cot^-1(1)=pi/4.</li><li><b>Trap:</b> Follow NCERT range convention.</li></ul></article><article class="formula"><div class="pill-row"><span>Domain</span></div><h3>sec inverse</h3><div class="formula-code">sec^-1 x: domain (-infinity,-1] U [1,infinity)</div><p>Defined only when reciprocal lies in [-1,1].</p><ul class="note-list"><li><b>Example:</b> sec^-1(2)=cos^-1(1/2)=pi/3.</li><li><b>Trap:</b> sec^-1(1/2) is undefined in real numbers.</li></ul></article><article class="formula"><div class="pill-row"><span>Identity</span></div><h3>Complementary identity</h3><div class="formula-code">sin^-1 x + cos^-1 x = pi/2</div><p>Sine and cosine principal angles are complementary.</p><ul class="note-list"><li><b>Example:</b> sin^-1(1/2)+cos^-1(1/2)=pi/2.</li><li><b>Trap:</b> x must be in [-1,1].</li></ul></article><article class="formula"><div class="pill-row"><span>Identity</span></div><h3>Tan-cot identity</h3><div class="formula-code">tan^-1 x + cot^-1 x = pi/2</div><p>Principal tan and cot angles are complementary.</p><ul class="note-list"><li><b>Example:</b> tan^-1(sqrt3)+cot^-1(sqrt3)=pi/2.</li><li><b>Trap:</b> Range convention matters.</li></ul></article><article class="formula"><div class="pill-row"><span>Identity</span></div><h3>Negative argument</h3><div class="formula-code">sin^-1(-x)=-sin^-1 x, tan^-1(-x)=-tan^-1 x</div><p>sin inverse and tan inverse are odd.</p><ul class="note-list"><li><b>Example:</b> tan^-1(-1)=-pi/4.</li><li><b>Trap:</b> cos inverse is not odd.</li></ul></article><article class="formula"><div class="pill-row"><span>Identity</span></div><h3>Cos negative argument</h3><div class="formula-code">cos^-1(-x)=pi-cos^-1 x</div><p>Cos inverse range is [0,pi].</p><ul class="note-list"><li><b>Example:</b> cos^-1(-1/2)=pi-pi/3=2pi/3.</li><li><b>Trap:</b> Do not write -cos^-1 x.</li></ul></article><article class="formula"><div class="pill-row"><span>Formula</span></div><h3>Tan inverse addition</h3><div class="formula-code">tan^-1 x + tan^-1 y = tan^-1((x+y)/(1-xy)) when xy&lt;1</div><p>Simple addition case for arctan.</p><ul class="note-list"><li><b>Example:</b> tan^-1(1/2)+tan^-1(1/3)=tan^-1(1).</li><li><b>Trap:</b> If xy&gt;1, handle pi adjustment.</li></ul></article><article class="formula"><div class="pill-row"><span>Formula</span></div><h3>Tan inverse subtraction</h3><div class="formula-code">tan^-1 x - tan^-1 y = tan^-1((x-y)/(1+xy))</div><p>Difference formula within principal range.</p><ul class="note-list"><li><b>Example:</b> tan^-1 2 - tan^-1 1 = tan^-1(1/3).</li><li><b>Trap:</b> Check denominator sign and final range.</li></ul></article><article class="formula"><div class="pill-row"><span>Triangle</span></div><h3>Triangle method</h3><div class="formula-code">If theta=tan^-1 x, use opposite=x, adjacent=1, hypotenuse=sqrt(1+x^2)</div><p>Converts inverse trig expressions into ordinary trig values.</p><ul class="note-list"><li><b>Example:</b> sin(tan^-1 x)=x/sqrt(1+x^2).</li><li><b>Trap:</b> Use correct quadrant from principal range.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="derivations">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Derivation bank</p><h2>Board-ready derivations and proofs.</h2><p>Each proof is broken into steps so students can reproduce it in exams.</p></div>
+        <div class="grid">
+          <article class="derivation"><details><summary>Derive sin^-1 x + cos^-1 x = pi/2 <span class="tag">pi/2</span></summary><ol><li>Let theta=sin^-1 x, so theta in [-pi/2,pi/2] and sin theta=x.</li><li>Then cos(pi/2-theta)=sin theta=x.</li><li>Since pi/2-theta lies in [0,pi], it is the principal value for cos^-1 x.</li><li>Thus cos^-1 x=pi/2-theta and the sum is pi/2.</li></ol><ul class="note-list"><li><b>Shortcut:</b> Use complementary angles.</li><li><b>Warning:</b> The range check is essential.</li></ul></details></article><article class="derivation"><details><summary>Derive cos^-1(-x)=pi-cos^-1 x <span class="tag">pi - cos^-1 x</span></summary><ol><li>Let theta=cos^-1 x, so theta in [0,pi].</li><li>cos(pi-theta)=-cos theta=-x.</li><li>pi-theta also lies in [0,pi].</li><li>Therefore cos^-1(-x)=pi-theta.</li></ol><ul class="note-list"><li><b>Shortcut:</b> Cos changes sign under pi-theta.</li><li><b>Warning:</b> Do not treat cos inverse as odd.</li></ul></details></article><article class="derivation"><details><summary>Derive tan inverse addition formula <span class="tag">tan^-1((x+y)/(1-xy))</span></summary><ol><li>Let A=tan^-1 x and B=tan^-1 y.</li><li>Then tan A=x and tan B=y.</li><li>tan(A+B)=(x+y)/(1-xy).</li><li>If A+B lies in the principal range, A+B equals tan^-1 of that expression.</li></ol><ul class="note-list"><li><b>Shortcut:</b> Name angles first.</li><li><b>Warning:</b> Case adjustment is needed when A+B leaves (-pi/2,pi/2).</li></ul></details></article><article class="derivation"><details><summary>Derive sin(tan^-1 x) <span class="tag">x/sqrt(1+x^2)</span></summary><ol><li>Let theta=tan^-1 x.</li><li>In a right triangle, take opposite=x and adjacent=1.</li><li>Hypotenuse is sqrt(1+x^2).</li><li>Therefore sin theta=x/sqrt(1+x^2).</li></ol><ul class="note-list"><li><b>Shortcut:</b> Triangle method beats memorization.</li><li><b>Warning:</b> Use sign carefully for negative x.</li></ul></details></article><article class="derivation"><details><summary>Graph inverse by reflection <span class="tag">reflect in y=x</span></summary><ol><li>Restrict the trig function to a one-one branch.</li><li>Take its graph on that branch.</li><li>Swap x and y coordinates.</li><li>This reflects the graph in y=x and gives the inverse graph.</li></ol><ul class="note-list"><li><b>Shortcut:</b> Inverse graph is coordinate swap.</li><li><b>Warning:</b> Reflect only the restricted branch.</li></ul></details></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint" id="diagrams">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Diagram bank</p><h2>Self-made visual diagrams.</h2><p>No copied textbook art. These diagrams are made with inline SVG and can be redrawn in notebooks.</p></div>
+        <div class="grid cards-3">
+          <article class="diagram"><svg viewBox="0 0 420 280" aria-hidden="true">
+      
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path>
+      </marker>
+      <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#ea7a3a"></path>
+      </marker>
+    </defs>
+    <rect x="14" y="14" width="392" height="252" rx="18" fill="currentColor" opacity=".045"></rect>
+  
+      <circle cx="210" cy="140" r="88" fill="#fff" stroke="#145c70" stroke-width="3"></circle>
+      <line x1="90" y1="140" x2="330" y2="140" stroke="#94a3b8"></line>
+      <line x1="210" y1="35" x2="210" y2="245" stroke="#94a3b8"></line>
+      <path d="M210 140 L272 78" stroke="#145c70" stroke-width="4" marker-end="url(#arrow)"></path>
+      <path d="M250 140 A40 40 0 0 0 238 112" fill="none" stroke="#ea7a3a" stroke-width="4"></path>
+      <text x="278" y="78">(cos t, sin t)</text><text x="248" y="126">t</text>
+    </svg><div class="diagram-body"><div class="pill-row"><span>Unit circle</span></div><h3>Principal angle on unit circle</h3><p>Shows how inverse trig returns an angle from a chosen range.</p><ul class="note-list"><li><b>Draw by hand:</b> Draw unit circle, radius, angle, and coordinate projection.</li></ul></div></article><article class="diagram"><svg viewBox="0 0 420 280" aria-hidden="true">
+      
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path>
+      </marker>
+      <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#ea7a3a"></path>
+      </marker>
+    </defs>
+    <rect x="14" y="14" width="392" height="252" rx="18" fill="currentColor" opacity=".045"></rect>
+  
+      <line x1="65" y1="215" x2="355" y2="215" stroke="#94a3b8"></line>
+      <line x1="210" y1="45" x2="210" y2="235" stroke="#94a3b8"></line>
+      <path d="M80 210 C135 205, 170 185, 210 140 C250 95, 285 75, 340 70" fill="none" stroke="#145c70" stroke-width="4"></path>
+      <rect x="125" y="60" width="170" height="160" rx="12" fill="none" stroke="#ea7a3a" stroke-dasharray="7 7" stroke-width="3"></rect>
+      <text x="112" y="45">principal branch is one-to-one</text>
+    </svg><div class="diagram-body"><div class="pill-row"><span>Branch</span></div><h3>Restricted branch</h3><p>Shows why a principal branch is needed before defining an inverse.</p><ul class="note-list"><li><b>Draw by hand:</b> Draw a rectangle around the branch where the graph is one-one.</li></ul></div></article><article class="diagram"><svg viewBox="0 0 420 280" aria-hidden="true">
+      
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path>
+      </marker>
+      <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#ea7a3a"></path>
+      </marker>
+    </defs>
+    <rect x="14" y="14" width="392" height="252" rx="18" fill="currentColor" opacity=".045"></rect>
+  
+      <line x1="55" y1="140" x2="365" y2="140" stroke="#94a3b8"></line>
+      <line x1="210" y1="45" x2="210" y2="235" stroke="#94a3b8"></line>
+      <path d="M90 210 C140 180, 175 160, 210 140 C245 120, 280 100, 330 70" fill="none" stroke="#145c70" stroke-width="4"></path>
+      <path d="M90 70 C140 100, 175 120, 210 140 C245 160, 280 180, 330 210" fill="none" stroke="#ea7a3a" stroke-width="3" stroke-dasharray="6 6"></path>
+      <text x="92" y="228">y = sin^-1 x</text><text x="258" y="225">reflection idea</text>
+    </svg><div class="diagram-body"><div class="pill-row"><span>Graph</span></div><h3>Inverse graph reflection</h3><p>Shows inverse graph as reflection across y=x.</p><ul class="note-list"><li><b>Draw by hand:</b> Draw y=x lightly and mirror key points.</li></ul></div></article><article class="diagram"><svg viewBox="0 0 420 280" aria-hidden="true">
+      
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path>
+      </marker>
+      <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#ea7a3a"></path>
+      </marker>
+    </defs>
+    <rect x="14" y="14" width="392" height="252" rx="18" fill="currentColor" opacity=".045"></rect>
+  
+      <rect x="78" y="72" width="264" height="140" rx="16" fill="#fff" stroke="#145c70" stroke-width="2"></rect>
+      <text x="108" y="122">sin^-1 x + cos^-1 x</text>
+      <line x1="132" y1="150" x2="288" y2="150" stroke="#ea7a3a" stroke-width="3" marker-end="url(#arrow2)"></line>
+      <text x="182" y="184">pi / 2</text>
+    </svg><div class="diagram-body"><div class="pill-row"><span>Identity</span></div><h3>Complementary identity</h3><p>Shows sin^-1 x and cos^-1 x adding to pi/2.</p><ul class="note-list"><li><b>Draw by hand:</b> Draw a right triangle and mark complementary angles.</li></ul></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="lab">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Interactive lab</p><h2>Principal value visualizer</h2><p>Move x from -1 to 1 and watch sin^-1 x, cos^-1 x, tan^-1 x, and the complementary identity update.</p></div>
+        <div class="lab">
+          <div class="lab-grid">
+            <div class="stage" id="labStage"><svg viewBox="0 0 420 280" aria-hidden="true">
+      
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path>
+      </marker>
+      <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#ea7a3a"></path>
+      </marker>
+    </defs>
+    <rect x="14" y="14" width="392" height="252" rx="18" fill="currentColor" opacity=".045"></rect>
+  
+      <circle cx="210" cy="140" r="88" fill="#fff" stroke="#145c70" stroke-width="3"></circle>
+      <line x1="90" y1="140" x2="330" y2="140" stroke="#94a3b8"></line>
+      <line x1="210" y1="35" x2="210" y2="245" stroke="#94a3b8"></line>
+      <path d="M210 140 L272 78" stroke="#145c70" stroke-width="4" marker-end="url(#arrow)"></path>
+      <path d="M250 140 A40 40 0 0 0 238 112" fill="none" stroke="#ea7a3a" stroke-width="4"></path>
+      <text x="278" y="78">(cos t, sin t)</text><text x="248" y="126">t</text>
+    </svg></div>
+            <div class="controls">
+    <h3>Principal value visualizer</h3>
+    <label>x value in [-1, 1] <input id="xValue" type="range" min="-1" max="1" step="0.01" value="0.5"></label>
+    <div class="result">Current x: <b id="xRead">0.50</b></div>
+    <div class="result" id="labResult"></div>
+    <p>The inverse trigonometric function returns the principal angle, not every possible angle.</p>
+  </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint" id="practice">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Practice zone</p><h2>Original practice questions with solutions.</h2><p>Use the filter to isolate CBSE, JEE, proof, graph, or trap-based questions.</p></div>
+        <label class="search practice-filter">Search questions <input id="questionSearch" placeholder="Type CBSE, JEE, graph, proof, inverse, one-one..."></label>
+        <div class="grid cards-3" id="questionGrid">
+    <article class="question-card" data-q="cbse">
+      <div class="pill-row"><span>CBSE</span><span>Easy</span></div>
+      <h3>1. Find sin^-1(1/2).</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: pi/6</strong>
+        <p>The principal angle in [-pi/2,pi/2] with sine 1/2 is pi/6.</p>
+        <p><b>Trap:</b> 5pi/6 is not in the range of sin^-1.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="cbse">
+      <div class="pill-row"><span>CBSE</span><span>Easy</span></div>
+      <h3>2. Find cos^-1(-1/2).</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: 2pi/3</strong>
+        <p>cos(2pi/3)=-1/2 and 2pi/3 lies in [0,pi].</p>
+        <p><b>Trap:</b> Do not give -pi/3.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="cbse">
+      <div class="pill-row"><span>CBSE</span><span>Easy</span></div>
+      <h3>3. State domain of sec^-1 x.</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: (-infinity,-1] U [1,infinity)</strong>
+        <p>sec theta=x means cos theta=1/x, so |1/x|&lt;=1 and |x|&gt;=1.</p>
+        <p><b>Trap:</b> Values between -1 and 1 are not allowed.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="identity">
+      <div class="pill-row"><span>Identity</span><span>Medium</span></div>
+      <h3>4. Simplify sin^-1 x + cos^-1 x.</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: pi/2</strong>
+        <p>For x in [-1,1], principal sine and cosine angles are complementary.</p>
+        <p><b>Trap:</b> Mention domain.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="identity">
+      <div class="pill-row"><span>Identity</span><span>Medium</span></div>
+      <h3>5. Simplify cos^-1(-x).</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: pi - cos^-1 x</strong>
+        <p>If theta=cos^-1 x, then cos(pi-theta)=-x.</p>
+        <p><b>Trap:</b> cos inverse is not odd.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="jee">
+      <div class="pill-row"><span>JEE</span><span>Medium</span></div>
+      <h3>6. Find tan^-1(1/2)+tan^-1(1/3).</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: pi/4</strong>
+        <p>Use formula: (1/2+1/3)/(1-1/6)=1, so result is tan^-1 1=pi/4.</p>
+        <p><b>Trap:</b> Check xy&lt;1.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="triangle">
+      <div class="pill-row"><span>Triangle</span><span>Medium</span></div>
+      <h3>7. Find sin(tan^-1 x).</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: x/sqrt(1+x^2)</strong>
+        <p>Let theta=tan^-1 x. Use opposite=x, adjacent=1, hypotenuse=sqrt(1+x^2).</p>
+        <p><b>Trap:</b> Do not write x directly.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="graph">
+      <div class="pill-row"><span>Graph</span><span>Medium</span></div>
+      <h3>8. What is the range of tan^-1 x?</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: (-pi/2, pi/2)</strong>
+        <p>The principal branch of tan is restricted to (-pi/2,pi/2).</p>
+        <p><b>Trap:</b> Endpoints are not included.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="trap">
+      <div class="pill-row"><span>Trap</span><span>Hard</span></div>
+      <h3>9. Is sin^-1(sin 2pi/3)=2pi/3?</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: No, it equals pi/3.</strong>
+        <p>sin 2pi/3=sqrt3/2. The principal angle for sin inverse is pi/3.</p>
+        <p><b>Trap:</b> sin^-1(sin theta) returns theta only when theta is in principal range.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="jee">
+      <div class="pill-row"><span>JEE</span><span>Hard</span></div>
+      <h3>10. Find tan^-1 2 + tan^-1 3.</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: pi + tan^-1(-5)</strong>
+        <p>xy=6&gt;1 and both positive, so the sum is in quadrant II. Formula gives tan value -5, so principal adjustment gives pi + tan^-1(-5).</p>
+        <p><b>Trap:</b> Using tan^-1(-5) alone gives a negative angle.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="cbse">
+      <div class="pill-row"><span>CBSE</span><span>Medium</span></div>
+      <h3>11. Find cot^-1(-1).</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: 3pi/4</strong>
+        <p>cot theta=-1 and theta in (0,pi), so theta=3pi/4.</p>
+        <p><b>Trap:</b> Do not use -pi/4 under NCERT range.</p>
+      </div>
+    </article>
+  
+    <article class="question-card" data-q="proof">
+      <div class="pill-row"><span>Proof</span><span>Hard</span></div>
+      <h3>12. Prove tan^-1 x + cot^-1 x = pi/2.</h3>
+      <button class="ghost answer-toggle" type="button">Show answer</button>
+      <div class="answer">
+        <strong>Answer: Use cot^-1 x = pi/2 - tan^-1 x.</strong>
+        <p>Let theta=tan^-1 x. Then cot(pi/2-theta)=tan theta=x, and pi/2-theta lies in cot inverse range.</p>
+        <p><b>Trap:</b> Range convention must be stated.</p>
+      </div>
+    </article>
+  </div>
+      </div>
+    </section>
+
+    <section id="revision">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Revision dashboard</p><h2>Final high-yield dashboard.</h2><p>A compact last-day plan with formulas, traps, memory hooks, and question types.</p></div>
+        <div class="dashboard">
+          <article class="card"><h3>Top concepts</h3><ul><li>Inverse needs one-one branch</li><li>Principal value is the selected angle</li><li>sin^-1 range is [-pi/2,pi/2]</li><li>cos^-1 range is [0,pi]</li><li>tan^-1 range is open interval</li></ul></article><article class="card"><h3>Top traps</h3><ul><li>sin^-1(sin theta) not always theta</li><li>cos inverse is not odd</li><li>Ignoring arctan cases</li><li>Using wrong cot inverse range</li><li>Forgetting |x|&gt;=1 for sec inverse</li></ul></article><article class="card"><h3>30-minute plan</h3><ul><li>7 min: domains and ranges</li><li>7 min: identities</li><li>6 min: triangle method</li><li>5 min: graphs</li><li>5 min: mixed simplification</li></ul></article><article class="card"><h3>Question types</h3><ul><li>Principal value</li><li>Domain/range</li><li>Identity proof</li><li>tan inverse addition</li><li>Triangle simplification</li><li>Graph interpretation</li></ul></article>
+        </div>
+        <article class="print-sheet" id="print">
+          <div class="section-head"><p class="eyebrow">Printable sheet</p><h2>Inverse Trigonometric Functions in one scan.</h2><p>Use your browser's print option to save this as PDF or print it before revision.</p></div>
+          <div class="print-grid"><div><h3>Must-know formulas</h3><ul><li>sin inverse: sin^-1 x: domain [-1,1], range [-pi/2, pi/2]</li><li>cos inverse: cos^-1 x: domain [-1,1], range [0, pi]</li><li>tan inverse: tan^-1 x: domain R, range (-pi/2, pi/2)</li><li>cot inverse: cot^-1 x: domain R, range (0, pi)</li><li>sec inverse: sec^-1 x: domain (-infinity,-1] U [1,infinity)</li><li>Complementary identity: sin^-1 x + cos^-1 x = pi/2</li><li>Tan-cot identity: tan^-1 x + cot^-1 x = pi/2</li><li>Negative argument: sin^-1(-x)=-sin^-1 x, tan^-1(-x)=-tan^-1 x</li><li>Cos negative argument: cos^-1(-x)=pi-cos^-1 x</li><li>Tan inverse addition: tan^-1 x + tan^-1 y = tan^-1((x+y)/(1-xy)) when xy&lt;1</li></ul></div><div><h3>Must-avoid traps</h3><ul><li>Inverse trig returns principal value only.</li><li>cos^-1(-x)=pi-cos^-1 x, not -cos^-1 x.</li><li>tan^-1 addition formula needs case checking.</li><li>sec^-1 and cosec^-1 require |x|&gt;=1.</li><li>cot^-1 range must follow NCERT convention.</li><li>Always check domain before simplifying.</li></ul></div></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><b>MathsForge</b><p>Static, free, GitHub Pages-ready Chapter 2 website. No backend, database, paid API, or subscription.</p></div></footer>
+
+  <script>
+    const siteKind = "trig";
+    const $ = (sel) => document.querySelector(sel);
+    const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+    const mode = $('#mode');
+    const savedTheme = localStorage.getItem('mathsforge-ch2-theme');
+    if (savedTheme === 'dark') document.documentElement.classList.add('dark');
+    mode.textContent = document.documentElement.classList.contains('dark') ? 'Light' : 'Dark';
+    mode.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('mathsforge-ch2-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      mode.textContent = document.documentElement.classList.contains('dark') ? 'Light' : 'Dark';
+    });
+    $('#menu').addEventListener('click', () => $('#mobileLinks').classList.toggle('hide'));
+    $$('#mobileLinks a').forEach((a) => a.addEventListener('click', () => $('#mobileLinks').classList.add('hide')));
+    $('#noteSearch').addEventListener('input', (event) => {
+      const q = event.target.value.toLowerCase();
+      $$('.note-card').forEach((card) => card.classList.toggle('hide', !card.dataset.note.includes(q)));
+    });
+    $('#questionSearch').addEventListener('input', (event) => {
+      const q = event.target.value.toLowerCase();
+      $$('.question-card').forEach((card) => card.classList.toggle('hide', !(card.dataset.q + ' ' + card.textContent.toLowerCase()).includes(q)));
+    });
+    $$('.answer-toggle').forEach((button) => button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      answer.classList.toggle('open');
+      button.textContent = answer.classList.contains('open') ? 'Hide answer' : 'Show answer';
+    }));
+    function drawRelationLab() {
+      const pairsText = $('#pairs').value;
+      const codomain = $('#codomain').value.split(',').map((x) => x.trim()).filter(Boolean);
+      const domain = $('#domain').value.split(',').map((x) => x.trim()).filter(Boolean);
+      const pairs = pairsText.split(';').map((p) => p.split(',').map((x) => x.trim())).filter((p) => p.length === 2 && p[0] && p[1]);
+      const fromCounts = Object.fromEntries(domain.map((x) => [x, 0]));
+      const image = new Set();
+      pairs.forEach(([a,b]) => { if (fromCounts[a] !== undefined) fromCounts[a] += 1; image.add(b); });
+      const isFunction = domain.every((x) => fromCounts[x] === 1);
+      const isOneOne = isFunction && new Set(pairs.map((p) => p[1])).size === pairs.length;
+      const isOnto = codomain.every((x) => image.has(x));
+      $('#labResult').innerHTML = '<b>Function:</b> ' + yes(isFunction) + '<br><b>One-one:</b> ' + yes(isOneOne) + '<br><b>Onto:</b> ' + yes(isOnto) + '<br><b>Range:</b> {' + Array.from(image).join(', ') + '}<br><b>Exam sentence:</b> ' + (isFunction ? 'Every domain element has exactly one image.' : 'At least one domain element has zero or multiple images.');
+      const left = domain.map((x,i) => '<text x="92" y="' + (88+i*48) + '">' + x + '</text>').join('');
+      const right = codomain.map((x,i) => '<text x="312" y="' + (88+i*48) + '">' + x + '</text>').join('');
+      const arrows = pairs.map(([a,b]) => {
+        const ai = domain.indexOf(a), bi = codomain.indexOf(b);
+        if (ai < 0 || bi < 0) return '';
+        return '<line x1="120" y1="' + (84+ai*48) + '" x2="294" y2="' + (84+bi*48) + '" stroke="#145c70" stroke-width="3" marker-end="url(#labArrow)"></line>';
+      }).join('');
+      $('#labStage').innerHTML = '<svg viewBox="0 0 420 330"><defs><marker id="labArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path></marker></defs><ellipse cx="100" cy="160" rx="62" ry="130" fill="#d9f1f7" stroke="#145c70" stroke-width="2"></ellipse><ellipse cx="320" cy="160" rx="62" ry="130" fill="#fff3d6" stroke="#ea7a3a" stroke-width="2"></ellipse><text x="94" y="40">A</text><text x="314" y="40">B</text>' + left + right + arrows + '</svg>';
+    }
+    function yes(v){return v ? '<span style="color:#0f766e;font-weight:950">Yes</span>' : '<span style="color:#b91c1c;font-weight:950">No</span>'}
+    function drawTrigLab() {
+      const x = Number($('#xValue').value);
+      $('#xRead').textContent = x.toFixed(2);
+      const angle = Math.asin(x);
+      const cosAngle = Math.acos(x);
+      const tanAngle = Math.atan(x);
+      const px = 210 + Math.cos(angle) * 88;
+      const py = 140 - Math.sin(angle) * 88;
+      $('#labResult').innerHTML = '<b>sin^-1(' + x.toFixed(2) + ')</b> = ' + angle.toFixed(3) + ' rad<br><b>cos^-1(' + x.toFixed(2) + ')</b> = ' + cosAngle.toFixed(3) + ' rad<br><b>tan^-1(' + x.toFixed(2) + ')</b> = ' + tanAngle.toFixed(3) + ' rad<br><b>Identity check:</b> sin^-1 x + cos^-1 x = ' + (angle + cosAngle).toFixed(3) + ' rad = pi/2';
+      $('#labStage').innerHTML = '<svg viewBox="0 0 420 330"><defs><marker id="labArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path></marker></defs><circle cx="210" cy="140" r="88" fill="#fff" stroke="#145c70" stroke-width="3"></circle><line x1="70" y1="140" x2="350" y2="140" stroke="#94a3b8"></line><line x1="210" y1="40" x2="210" y2="240" stroke="#94a3b8"></line><line x1="210" y1="140" x2="' + px + '" y2="' + py + '" stroke="#145c70" stroke-width="4" marker-end="url(#labArrow)"></line><circle cx="' + px + '" cy="' + py + '" r="7" fill="#ea7a3a"></circle><line x1="' + px + '" y1="' + py + '" x2="' + px + '" y2="140" stroke="#ea7a3a" stroke-dasharray="6 6"></line><text x="225" y="56">unit circle</text><text x="' + (px + 8) + '" y="' + (py - 8) + '">sin value = ' + x.toFixed(2) + '</text></svg>';
+    }
+    if (siteKind === 'relations') {
+      ['pairs','domain','codomain'].forEach((id) => $('#' + id).addEventListener('input', drawRelationLab));
+      drawRelationLab();
+    } else {
+      $('#xValue').addEventListener('input', drawTrigLab);
+      drawTrigLab();
+    }
+  </script>
+</body>
+</html>
